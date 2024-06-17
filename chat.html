@@ -1,0 +1,126 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+  <title>What's Next Section</title>
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.6.0/dist/css/bootstrap.min.css">
+  <style>
+    .whats-next {
+      background-color: #001f3f;
+      color: #ffffff;
+      padding: 10px;
+      border-radius: 8px;
+      margin-top: 20px;
+      max-height: 90vh;
+      overflow-y: auto;
+    }
+    .whats-next h1, .whats-next h2, .whats-next h3 {
+      text-align: left;
+    }
+    .whats-next img {
+      width: 100%;
+      max-width: 300px;
+      max-height: 200px;
+      border-radius: 8px;
+      margin-bottom: 10px;
+    }
+    .whats-next ul {
+      list-style-type: none;
+      padding: 0;
+    }
+    .whats-next ul li {
+      margin-bottom: 5px;
+    }
+    @media (max-width: 767.98px) {
+      .whats-next {
+        position: fixed;
+        right: -90%;
+        bottom: 0;
+        width: 90%;
+        height: 100%;
+        transition: right 0.3s ease-in-out;
+      }
+      .whats-next.show {
+        right: 0;
+      }
+      .whats-next-tab {
+        position: fixed;
+        left: 0;
+        top: 50%;
+        transform: translateY(-50%);
+        background-color: #ff851b;
+        color: #ffffff;
+        padding: 10px;
+        cursor: pointer;
+        writing-mode: vertical-rl;
+        text-orientation: mixed;
+        border-radius: 8px 8px 0 0;
+        transition: left 0.3s ease-in-out;
+      }
+      .whats-next.show + .whats-next-tab {
+        left: 90%;
+      }
+    }
+  </style>
+</head>
+<body>
+
+  <!-- Tab for mobile view -->
+  <div class="whats-next-tab" onclick="toggleWhatsNext()">What's Next</div>
+  
+  <!-- What's Next section for mobile view -->
+  <div class="whats-next whats-next-mobile" id="whatsNextMobile">
+    <h1>What's Next</h1>
+    <ul class="list-unstyled">
+      <li class="media my-4">
+        <img src="img/event1.jpg" alt="Event 1">
+        <div class="media-body">
+          <h3>Sport</h3>
+          <h2>Sanderson vs. School</h2>
+          <ul>
+            <li><strong>Date:</strong> June 14, 2024</li>
+            <li><strong>Time:</strong> 7:00 PM</li>
+            <li><strong>Location:</strong> Stadium</li>
+          </ul>
+        </div>
+      </li>
+      <li class="media my-4">
+        <img src="img/event2.jpg" alt="Event 2">
+        <div class="media-body">
+          <h3>Sport</h3>
+          <h2>Sanderson vs. Another School</h2>
+          <ul>
+            <li><strong>Date:</strong> June 21, 2024</li>
+            <li><strong>Time:</strong> 7:00 PM</li>
+            <li><strong>Location:</strong> Stadium</li>
+          </ul>
+        </div>
+      </li>
+      <li class="media my-4">
+        <img src="img/event3.jpg" alt="Event 3">
+        <div class="media-body">
+          <h3>Sport</h3>
+          <h2>Sanderson vs. Rival School</h2>
+          <ul>
+            <li><strong>Date:</strong> June 28, 2024</li>
+            <li><strong>Time:</strong> 7:00 PM</li>
+            <li><strong>Location:</strong> Stadium</li>
+          </ul>
+        </div>
+      </li>
+    </ul>
+  </div>
+
+  <script>
+    function toggleWhatsNext() {
+      var whatsNext = document.getElementById('whatsNextMobile');
+      whatsNext.classList.toggle('show');
+    }
+  </script>
+
+  <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"></script>
+  <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.6.0/dist/umd/popper.min.js"></script>
+  <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+</body>
+</html>
