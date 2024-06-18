@@ -32,6 +32,11 @@
     .whats-next ul li {
       margin-bottom: 5px;
     }
+    .carousel-control-prev-icon,
+    .carousel-control-next-icon {
+      background-color: #ffffff;
+      border-radius: 50%;
+    }
     @media (max-width: 767.98px) {
       .whats-next {
         position: fixed;
@@ -69,13 +74,13 @@
   <!-- Tab for mobile view -->
   <div class="whats-next-tab" onclick="toggleWhatsNext()">What's Next</div>
   
-  <!-- What's Next section for mobile view -->
-  <div class="whats-next whats-next-mobile" id="whatsNextMobile">
-    <h1>What's Next</h1>
-    <ul class="list-unstyled">
-      <li class="media my-4">
-        <img src="img/event1.jpg" alt="Event 1">
-        <div class="media-body">
+  <!-- What's Next section for mobile and desktop view -->
+  <div class="whats-next whats-next-mobile carousel slide" id="whatsNextMobile" data-ride="carousel" data-interval="3000">
+    <div class="carousel-inner">
+      <div class="carousel-item active">
+        <div style="padding: 10px;">
+          <h1>What's Next</h1>
+          <img src="img/yu-yu-hakusho-pictures-4gsqi30z0n6f2ouo.jpg" alt="Event 1">
           <h3>Sport</h3>
           <h2>Sanderson vs. School</h2>
           <ul>
@@ -84,10 +89,11 @@
             <li><strong>Location:</strong> Stadium</li>
           </ul>
         </div>
-      </li>
-      <li class="media my-4">
-        <img src="img/event2.jpg" alt="Event 2">
-        <div class="media-body">
+      </div>
+      <div class="carousel-item">
+        <div style="padding: 10px;">
+          <h1>What's Next</h1>
+          <img src="img/event2.jpg" alt="Event 2">
           <h3>Sport</h3>
           <h2>Sanderson vs. Another School</h2>
           <ul>
@@ -96,10 +102,11 @@
             <li><strong>Location:</strong> Stadium</li>
           </ul>
         </div>
-      </li>
-      <li class="media my-4">
-        <img src="img/event3.jpg" alt="Event 3">
-        <div class="media-body">
+      </div>
+      <div class="carousel-item">
+        <div style="padding: 10px;">
+          <h1>What's Next</h1>
+          <img src="img/event3.jpg" alt="Event 3">
           <h3>Sport</h3>
           <h2>Sanderson vs. Rival School</h2>
           <ul>
@@ -108,8 +115,16 @@
             <li><strong>Location:</strong> Stadium</li>
           </ul>
         </div>
-      </li>
-    </ul>
+      </div>
+    </div>
+    <a class="carousel-control-prev" href="#whatsNextMobile" role="button" data-slide="prev">
+      <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+      <span class="sr-only">Previous</span>
+    </a>
+    <a class="carousel-control-next" href="#whatsNextMobile" role="button" data-slide="next">
+      <span class="carousel-control-next-icon" aria-hidden="true"></span>
+      <span class="sr-only">Next</span>
+    </a>
   </div>
 
   <script>
