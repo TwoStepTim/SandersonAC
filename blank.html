@@ -11,6 +11,9 @@
     <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/js/bootstrap.min.js"></script>
     <script src="https://kit.fontawesome.com/377f518282.js" crossorigin="anonymous"></script>
     <style>
+      @font-face { font-family: Grasss; src: url('kenyan coffee rg.otf'); } 
+
+   
         .header {
             display: flex;
             flex-direction: column;
@@ -54,12 +57,12 @@
         }
         body {
             line-height: 1.8;
-            color: #818181;
         }
         img {
             border-radius: 50px;
         }
-        h2 {
+        h2, h1 {
+            font-family: Grasss !important;
             font-size: 24px;
             text-transform: uppercase;
             color: #303030;
@@ -67,6 +70,7 @@
             margin-bottom: 30px;
         }
         h4 {
+            font-family: Grasss !important;
             font-size: 19px;
             line-height: 1.375em;
             color: #303030;
@@ -74,13 +78,13 @@
             margin-bottom: 30px;
         }  
         .container-fluid {
-            padding: 60px 50px;
+            padding: 60px 90px ;
         }
-        .bg-grey {
-            background-color: #f6f6f6;
+        .bg-blue {
+            padding-left: 50px;
         }
         #about img {
-            width: 30vw;
+            width: 40vw;
         }
         #MS img {
             width: 30vw;
@@ -102,11 +106,41 @@
             text-decoration: underline;
         }
         .bento-box {
-            background-color: white;
+            background-color: rgb(255, 255, 255);
             padding: 20px;
             margin: 10px;
             border-radius: 8px;
             box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+            transition: transform 0.3s;
+            color: #000;
+            border-style:solid;
+            
+          
+        }
+        .bento-box:hover {
+            transform: translateY(-10px);
+        }
+        .coach-card {
+            display: flex;
+            align-items: center;
+            margin-bottom: 15px;
+        }
+        .coach-card img {
+            width: 100px;
+            height: 100px;
+            border-radius: 50%;
+            margin-right: 15px;
+        }
+        .coach-info {
+            flex: 1;
+        }
+        .social-icons a {
+            color: #303030;
+            margin-right: 10px;
+            transition: color 0.3s;
+        }
+        .social-icons a:hover {
+            color: #f4511e;
         }
     </style>
 </head>
@@ -142,46 +176,41 @@
         </div>
     </nav>
 
-    <!-- Hero Section -->
-    <div class="hero-section">
-        <div class="hero-content">
-            <h1>Welcome to Sanderson Athletic Club</h1>
-            <p>Your fitness journey starts here.</p>
-        </div>
-    </div>
+    
 
     <!-- Custom Section -->
     <!-- Container (About Section) -->
-    <div id="about" class="container-fluid">
+    <div id="about" class="container-fluid ">
         <div class="row">
-            <div class="col-sm-8">
-                <h2>About Company Page</h2><br>
-                <h4>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.</h4><br>
+            <div class="col-sm-6">
+                <img src="img/logo_blank.png" alt="">
+            </div>
+            <div class="col-sm-4 ">
+                <h1>Sanderson Athletic Club</h1><br>
+    
                 <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.</p>
                 <br><button class="btn btn-default btn-lg">Get in Touch</button>
-            </div>
-            <div class="col-sm-4">
-                <img src="img/Logo.jpg" alt="">
             </div>
         </div>
     </div>
 
-    <div id="MS" class="container-fluid bg-grey">
+    <div id="MS" class="container-fluid bg-blue  ml-5">
         <div class="row">
-            <div class="col-sm-4">
-                <img src="img/Jeremy-Pittman-Jr..jpg" alt="">
-            </div>
-            <div class="col-sm-8">
-                <h2>Our Values</h2><br>
-                <h4><strong>MISSION:</strong> Our mission lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.</h4><br>
+            <div class="col-sm-6" >
+                <h1>Our Values</h1><br>
+                <hp><strong>MISSION:</strong> Our mission lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.</h4><br>
                 <p><strong>VISION:</strong> Our vision Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.
                 Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.</p>
+            </div>
+            <div class="col-sm-6">
+                <img src="img/Jeremy-Pittman-Jr..jpg" alt="">
             </div>
         </div>
     </div>
 
     <!-- Bento Box Design -->
     <div class="container-fluid">
+        <h1>Our Commitment</h1>
         <div class="row">
             <div class="col-md-6">
                 <div class="bento-box">
@@ -201,14 +230,7 @@
                 </div>
             </div>
         </div>
-        <div class="row">
-            <div class="col-md-12">
-                <div class="bento-box">
-                    <h2>Coaching Staff</h2>
-                    <p>Our experienced and dedicated coaches play a crucial role in the development of our student-athletes. They bring a wealth of knowledge and a passion for their respective sports, ensuring that each athlete has the opportunity to reach their full potential.</p>
-                </div>
-            </div>
-        </div>
+        
         <div class="row">
             <div class="col-md-6">
                 <div class="bento-box">
@@ -223,9 +245,67 @@
                 </div>
             </div>
         </div>
+        <div class="row">
+            <div class="col-md-12">
+                <div class="bento-box">
+                    <h2>Coaching Staff</h2>
+                    <div class="row">
+                        <div class="coach-card col-sm-3">
+                            <img src="https://via.placeholder.com/100" alt="Coach 1">
+                            <div class="coach-info">
+                                <h4>Coach Name 1</h4>
+                                <p>Position</p>
+                                <div class="social-icons">
+                                    <a href="#"><i class="fab fa-facebook-f"></i></a>
+                                    <a href="#"><i class="fab fa-twitter"></i></a>
+                                    <a href="#"><i class="fab fa-instagram"></i></a>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="coach-card col-sm-3">
+                            <img src="https://via.placeholder.com/100" alt="Coach 2">
+                            <div class="coach-info">
+                                <h4>Coach Name 2</h4>
+                                <p>Position</p>
+                                <div class="social-icons">
+                                    <a href="#"><i class="fab fa-facebook-f"></i></a>
+                                    <a href="#"><i class="fab fa-twitter"></i></a>
+                                    <a href="#"><i class="fab fa-instagram"></i></a>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="coach-card col-sm-3">
+                            <img src="https://via.placeholder.com/100" alt="Coach 3">
+                            <div class="coach-info">
+                                <h4>Coach Name 3</h4>
+                                <p>Position</p>
+                                <div class="social-icons">
+                                    <a href="#"><i class="fab fa-facebook-f"></i></a>
+                                    <a href="#"><i class="fab fa-twitter"></i></a>
+                                    <a href="#"><i class="fab fa-instagram"></i></a>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="coach-card col-sm-3">
+                            <img src="https://via.placeholder.com/100" alt="Coach 4">
+                            <div class="coach-info">
+                                <h4>Coach Name 4</h4>
+                                <p>Position</p>
+                                <div class="social-icons">
+                                    <a href="#"><i class="fab fa-facebook-f"></i></a>
+                                    <a href="#"><i class="fab fa-twitter"></i></a>
+                                    <a href="#"><i class="fab fa-instagram"></i></a>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    
+                </div>
+            </div>
+        </div>
     </div>
 
-    <!-- FAQ Section -->
+    <!-- FAQ Section
     <div class="faq-section">
         <h2>Frequently Asked Questions</h2>
         <div class="accordion" id="faqAccordion">
@@ -273,10 +353,14 @@
             </div>
         </div>
     </div>
+     -->
     <h1>Connect With Us on Social Media</h1>
-    <script src="https://embedsocial.com/js/iframe.js"></script>
-    <iframe style="border: 0; width: 100%; height: 100%;" scrolling="no" src="https://embedsocial.com/api/pro_hashtag/40a903b2e8267d5ddec27277582c4204178ad0d2"></iframe>
-    <script>iFrameResize();</script>
+    <div class="container">
+        <script src="https://embedsocial.com/js/iframe.js"></script>
+        <iframe style="border: 0; width: 100%; height: 100%;" scrolling="no" src="https://embedsocial.com/api/pro_hashtag/40a903b2e8267d5ddec27277582c4204178ad0d2"></iframe>
+        <script>iFrameResize();</script>
+    </div>
+    
 
     <!-- Footer -->
     <footer class="text-center text-white" style="background-color: #0026fa">
