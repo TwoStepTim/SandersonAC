@@ -1,0 +1,379 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Sanderson Athletic Club</title>
+    <link href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css?family=Montserrat" rel="stylesheet" type="text/css">
+    <link href="https://fonts.googleapis.com/css?family=Lato" rel="stylesheet" type="text/css">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.7.1/jquery.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/js/bootstrap.min.js"></script>
+    <script src="https://kit.fontawesome.com/377f518282.js" crossorigin="anonymous"></script>
+    <style>
+      @font-face { font-family: Grasss; src: url('kenyan coffee rg.otf'); } 
+
+   
+        .header {
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            padding: 10px 20px;
+            background-color: #f4511e;
+            color: #303030;
+        }
+        @media (min-width: 768px) {
+            .header {
+                flex-direction: row;
+                justify-content: space-between;
+            }
+        }
+        .navbar {
+            background: white;
+        }
+        .navbar-brand {
+            font-size: 1.5rem;
+            
+        }
+        .nav-item {
+            font-size: 1.5rem;
+        }
+  
+        body {
+            line-height: 1.8;
+        }
+        img {
+            border-radius: 50px;
+        }
+        h2, h1 {
+            font-family: Grasss !important;
+            font-size: 24px;
+            text-transform: uppercase;
+            color: #303030;
+            font-weight: 600;
+            margin-bottom: 30px;
+        }
+        h4 {
+            font-family: Grasss !important;
+            font-size: 19px;
+            line-height: 1.375em;
+            color: #303030;
+            font-weight: 400;
+            margin-bottom: 30px;
+        }  
+        .container-fluid {
+            padding: 60px 90px ;
+        }
+        
+        .dropdown-menu {
+            background-color: transparent;
+            border: none;
+            padding: 0;
+        }
+        .dropdown-list {
+            list-style-type: disc;
+            padding-left: 20px; /* Adjust as needed for proper indentation */
+        }
+        .dropdown-item {
+            color: white;
+        }
+        .dropdown-item:hover {
+            text-decoration: underline;
+        }
+        .bento-box {
+            background-color: rgb(255, 255, 255);
+            padding: 20px;
+            margin: 10px;
+            border-radius: 8px;
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+            transition: transform 0.3s;
+            color: #000;
+            border-style:solid;
+            
+          
+        }
+      
+
+        .social-media-heading {
+        margin: 0;
+        /* Add any other styles you need */
+    }
+
+  
+    .center {
+        text-align: left;
+        list-style-position: inside;
+    }
+    /* Media query for smaller screens */
+    .main{
+        font-size: 5rem;
+
+    }
+    .section-title {
+            text-align: center;
+            margin-bottom: 30px;
+            margin-top: 50px;
+        }
+        .sports-row {
+            justify-content: center;
+            text-align: center;
+        }
+        .sports-row ul {
+            list-style-type: none;
+            padding-left: 0;
+        }
+        .container {
+            text-align: center;
+        }
+        @media (max-width: 767px) {
+        .container {
+            padding: 0; /* Set the margins to 0 */
+          
+        }
+       
+    }
+    </style>
+</head>
+<body>
+
+    <!-- Header -->
+    <div class="header">
+        <div>sandersonathliculb@gmail.com</div>
+        <div>5500 Dixon Dr, Raleigh, NC 27609</div>
+    </div>
+
+    <!-- Navbar -->
+    <nav class="navbar navbar-expand-lg navbar-dark bg-dark">
+        <a class="navbar-brand" href="#">Sanderson Athletic Club</a>
+        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse" id="navbarNav">
+            <ul class="navbar-nav ml-auto">
+                <li class="nav-item">
+                    <a class="nav-link" href="#">Home</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="#">About</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="#">Members</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="#">Events</a>
+                </li>
+            </ul>
+        </div>
+    </nav>
+
+    
+    <div class="container">
+        <div class="row">
+            <div class="col-12">
+                <h1 class="section-title main">Spartan Sports</h1>
+            </div>
+        </div>
+
+        <div class="row">
+            <div class="col-12">
+                <h2 class="section-title">Fall Sports</h2>
+            </div>
+        </div>
+        <div class="row sports-row">
+            <div class="col-lg-4">
+                <ul>
+                    <li>Cheer</li>
+                    <li>Boys Cross Country</li>
+                    <li>Girls Cross Country</li>
+                </ul>
+            </div>
+            <div class="col-lg-4">
+                <ul>
+                    <li>Football</li>
+                    <li>Girls Golf</li>
+                    <li>Girls Gymnastics</li>
+                </ul>
+            </div>
+            <div class="col-lg-4">
+                <ul>
+                    <li>Boys Soccer</li>
+                    <li>Girls Tennis</li>
+                    <li>Girls Volleyball</li>
+                </ul>
+            </div>
+        </div>
+        <hr>
+        <div class="row">
+            <div class="col-12">
+                <h2 class="section-title">Winter Sports</h2>
+            </div>
+        </div>
+        <div class="row sports-row">
+            <div class="col-lg-4">
+                <ul>
+                    <li>Basketball</li>
+                    <li>Wrestling</li>
+                    <li>Swimming</li>
+                </ul>
+            </div>
+            <div class="col-lg-4">
+                <ul>
+                    <li>Indoor Track</li>
+                    <li>Ice Hockey</li>
+                    <li>Bowling</li>
+                </ul>
+            </div>
+            <div class="col-lg-4">
+                <ul>
+                    <li>Skiing</li>
+                    <li>Snowboarding</li>
+                    <li>Figure Skating</li>
+                </ul>
+            </div>
+        </div>
+    <hr>
+        <div class="row">
+            <div class="col-12">
+                <h2 class="section-title">Spring Sports</h2>
+            </div>
+        </div>
+        <div class="row sports-row">
+            <div class="col-lg-4">
+                <ul>
+                    <li>Baseball</li>
+                    <li>Softball</li>
+                    <li>Track and Field</li>
+                </ul>
+            </div>
+            <div class="col-lg-4">
+                <ul>
+                    <li>Tennis</li>
+                    <li>Lacrosse</li>
+                    <li>Golf</li>
+                </ul>
+            </div>
+            <div class="col-lg-4">
+                <ul>
+                    <li>Soccer</li>
+                    <li>Volleyball</li>
+                    <li>Rowing</li>
+                </ul>
+            </div>
+        </div>
+    </div>
+
+    <!-- Footer -->
+    <footer class="text-center text-white" style="background-color: #0026fa">
+        <!-- Grid container -->
+        <div class="container">
+            <!-- Section: Links -->
+            <section class="mt-5">
+                <!-- Grid row-->
+                <div class="row text-center d-flex justify-content-center pt-5">
+                    <!-- Grid column -->
+                    <div class="col-md-2">
+                        <h6 class="text-uppercase font-weight-bold">
+                            <a href="#!" class="text-white">Home</a>
+                        </h6>
+                    </div>
+                    <!-- Grid column -->
+                
+                    <!-- Grid column -->
+                    <div class="col-md-2">
+                        <h6 class="text-uppercase font-weight-bold">
+                            <a href="#!" class="text-white">About</a>
+                        </h6>
+                    </div>
+                    <!-- Grid column -->
+                
+                    <!-- Grid column -->
+                    <div class="col-md-2">
+                        <h6 class="text-uppercase font-weight-bold">
+                            <a href="#!" class="text-white">Events</a>
+                        </h6>
+                    </div>
+                    <!-- Grid column -->
+                
+                    <!-- Grid column -->
+                    <div class="col-md-2">
+                        <h6 class="text-uppercase font-weight-bold">
+                            <a href="#!" class="text-white">Memberships</a>
+                        </h6>
+                    </div>
+                    <!-- Grid column -->
+                
+                    <!-- Grid column -->
+                    <div class="col-md-2 dropdown">
+                        <h6 class="text-uppercase font-weight-bold">
+                            <a href="#!" class="text-white dropdown-toggle" id="navbarDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">Other Links</a>
+                            <div class="dropdown-menu" aria-labelledby="navbarDropdown">
+                                <ul class="dropdown-list">
+                                    <li><a class="dropdown-item" href="#!">Sanderson HS</a></li>
+                                    <li><a class="dropdown-item" href="#!">Wake County Public Schools</a></li>
+                                    <li><a class="dropdown-item" href="#!">Sanderson Athletics Club</a></li>
+                                </ul>
+                            </div>
+                        </h6>
+                    </div>
+                    <!-- Grid column -->
+                </div>
+                <!-- Grid row-->
+            </section>
+            <!-- Section: Links -->
+
+            <hr class="my-5" />
+
+            <!-- Section: Text -->
+            <section class="mb-5">
+                <div class="row d-flex justify-content-center">
+                    <div class="col-lg-8">
+                        <p>
+                            The Sanderson High School Athletic Club is dedicated to fostering a spirit of sportsmanship, teamwork, and excellence among our student-athletes. We strive to support and enhance the athletic experience for all students, encouraging them to achieve their personal best both on and off the field. Join us in celebrating the hard work, dedication, and achievements of our athletes. Go Spartans!
+                        </p>
+                    </div>
+                </div>
+            </section>
+            <!-- Section: Text -->
+
+            <!-- Section: Social -->
+            <section class="text-center mb-5">
+                <a href="" class="text-white me-4">
+                    <i class="fab fa-facebook-f"></i>
+                </a>
+                <a href="" class="text-white me-4">
+                    <i class="fab fa-twitter"></i>
+                </a>
+                <a href="" class="text-white me-4">
+                    <i class="fab fa-google"></i>
+                </a>
+                <a href="" class="text-white me-4">
+                    <i class="fab fa-instagram"></i>
+                </a>
+                <a href="" class="text-white me-4">
+                    <i class="fab fa-linkedin"></i>
+                </a>
+                <a href="" class="text-white me-4">
+                    <i class="fab fa-github"></i>
+                </a>
+            </section>
+            <!-- Section: Social -->
+        </div>
+        <!-- Grid container -->
+
+        <!-- Copyright -->
+        <div class="text-center p-3" style="background-color: rgba(0, 0, 0, 0.2)">
+            © 2024 
+            <a class="text-white" href="https://circuittechsolutions.com/">Created with passion by Circuit Tech Solutions LLC. All rights reserved</a>
+        </div>
+        <!-- Copyright -->
+    </footer>
+    <!-- Footer -->
+
+    <!-- End of .container -->
+    <link href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" rel="stylesheet">
+    <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js"></script>
+  
+</body>
+</html>
