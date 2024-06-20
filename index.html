@@ -33,6 +33,7 @@
         }
         .navbar-brand {
             font-size: 1.5rem;
+            
         }
         .nav-item {
             font-size: 1.5rem;
@@ -142,6 +143,42 @@
         .social-icons a:hover {
             color: #f4511e;
         }
+        .ml-6{
+            margin-left: 10rem !important;
+        }
+        
+
+        .social-media-heading {
+        margin: 0;
+        /* Add any other styles you need */
+    }
+
+  
+
+    /* Media query for smaller screens */
+    @media (max-width: 767px) {
+        .container-fluid {
+            padding: 0; /* Set the margins to 0 */
+          
+        }
+        .ml-6{
+            margin-left: 0rem !important;
+        }
+
+        #about img{
+          width: 80vw;  
+        }
+        #about{
+            margin-bottom: 7rem;
+        }
+        #MS img {
+            width: 90vw; /* Make the images bigger */
+            margin-bottom: 7rem;
+        }
+        .social-media-heading{
+            margin-top: 7rem;
+        }
+    }
     </style>
 </head>
 <body>
@@ -154,7 +191,7 @@
 
     <!-- Navbar -->
     <nav class="navbar navbar-expand-lg navbar-dark bg-dark">
-        <a class="navbar-brand" href="#">SandersonAthlitic Club</a>
+        <a class="navbar-brand" href="#">Sanderson Athletic Club</a>
         <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
             <span class="navbar-toggler-icon"></span>
         </button>
@@ -180,12 +217,12 @@
 
     <!-- Custom Section -->
     <!-- Container (About Section) -->
-    <div id="about" class="container-fluid ">
+    <div id="about" class="container-fluid  ">
         <div class="row">
-            <div class="col-sm-6">
+            <div class="col-sm-5">
                 <img src="img/logo_blank.png" alt="">
             </div>
-            <div class="col-sm-4 ">
+            <div class="col-sm-6 ">
                 <h1>Sanderson Athletic Club</h1><br>
     
                 <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.</p>
@@ -194,7 +231,7 @@
         </div>
     </div>
 
-    <div id="MS" class="container-fluid bg-blue  ml-5">
+    <div id="MS" class="container-fluid bg-blue  ml-6">
         <div class="row">
             <div class="col-sm-6" >
                 <h1>Our Values</h1><br>
@@ -354,12 +391,14 @@
         </div>
     </div>
      -->
-    <h1>Connect With Us on Social Media</h1>
-    <div class="container">
+     <div class="container">
+        <h1 class="social-media-heading">Connect With Us on <br>Social Media</h1>
+    
         <script src="https://embedsocial.com/js/iframe.js"></script>
         <iframe style="border: 0; width: 100%; height: 100%;" scrolling="no" src="https://embedsocial.com/api/pro_hashtag/40a903b2e8267d5ddec27277582c4204178ad0d2"></iframe>
         <script>iFrameResize();</script>
     </div>
+    
     
 
     <!-- Footer -->
