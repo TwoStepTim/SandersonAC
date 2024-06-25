@@ -20,7 +20,10 @@
     <link href="https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap" rel="stylesheet">
 </head>
 <body>
-
+    <div class="preloader">
+        <img src="img/SAC.jpg" alt="Your Logo">
+      </div>
+    
     <!-- Header -->
     <div class="header">
         <div>sandersonathliculb@gmail.com</div>
@@ -206,6 +209,15 @@
                 <a class="text-white" href="https://circuittechsolutions.com/">Created with passion by Circuit Tech Solutions LLC. All rights reserved</a>
             </div>
         </footer>
+        <script>
+
+            // Remove preloader after 5 seconds
+            setTimeout(function() {
+              document.body.classList.add('loaded');
+            }, 3000);
+       
+           
+          </script>
         <link href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" rel="stylesheet">
         <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js"></script>
         <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js"></script>
