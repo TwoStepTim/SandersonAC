@@ -1,55 +1,313 @@
+@font-face { font-family: Grasss; src: url('kenyan coffee rg.otf'); } 
 
-body{
-    font-family: "Bebas Neue", sans-serif;
-    background-color: #1b1b1b  !important; /* Change background color here */
-
+.header {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 10px 20px;
+    background-color: #f41e1e;
+    color: #303030;
 }
-.nav-link{
-    font-weight: 400;
-  font-style: normal;
+@media (min-width: 768px) {
+    .header {
+        flex-direction: row;
+        justify-content: space-between;
+    }
 }
-
-/* Custom styles to ensure links do not grey out */
-.navbar-dark .navbar-nav .nav-link:visited, .navbar-dark .navbar-nav .nav-link.active {
-    color: #c0932a(255, 255, 255, 0.75) /* Or any color you prefer */
-
+.navbar {
+    background: white;
+    font-family: Grasss !important;
 }
-.navbar-dark .navbar-nav .nav-link {
-    color: #ebe2cd; /* Change link color here */
-    font-size: 60px;
+.navbar-toggler {
+  border-color: #ff0000 !important; /* Change border color to red */
+  color: rgb(17, 0, 255);
 }
-/* Optional: Adjusting hover color for better visibility */
-.navbar-dark .navbar-nav .nav-link:hover {
-    color: #c0932a; /* Brighter color on hover */
+.custom-toggler .navbar-toggler-icon {
+  background-image: url(
+"data:image/svg+xml;charset=utf8,%3Csvg viewBox='0 0 32 32' xmlns='http://www.w3.org/2000/svg'%3E%3Cpath stroke='rgba(17, 0, 255, 0.8)' stroke-width='2' stroke-linecap='round' stroke-miterlimit='10' d='M4 8h24M4 16h24M4 24h24'/%3E%3C/svg%3E");
 }
-.navbar-dark {
-    background-color: #1b1b1b  !important; /* Change background color here */
+.collapse.navbar-collapse {
+  background-color: white; /* Optional: Change background color of dropdown to white */
 }
-.navbar-brand
-{
-  font-size: 30px;
-  letter-spacing: 2px;
+.navbar-nav .nav-link {
+  color: #ff0000; /* Change dropdown menu item color to red */
 }
-
-html#ecwid_html body#ecwid_body .ec-size .ec-store .grid-product__title-inner {
-    color: WHITE !important;
-    letter-spacing: 2PX;
+.navbar a {
+    color: #000;
 }
-
-/* Add this to your CSS file */
-
-/* White box styling */
-
-  
-  /* Parallax section styling */
-  .parallax {
-    background-image: url('img/Football23.jpg'); /* Replace with your image URL */
-    height: 600px;
-    background-attachment: fixed;
-    background-position: center;
-    background-repeat: no-repeat;
+.navbar img {
+    width: 7rem;
+}
+.navbar a:hover {
+    color: #ff0000;
+}
+.navbar-brand {
+    font-size: 2.7rem !important;
+    color: #ff0000;
+}
+.nav-item {
+    font-size:2rem;
+}
+.hero-section {
+    position: relative;
+    background: url('img/home.png') no-repeat center center;
     background-size: cover;
-    margin-top: -18vh;
+    height: 400px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color: white;
+    text-align: center;
+}
+.hero-content {
+    position: absolute;
+}
+.faq-section {
+    padding: 20px;
+    background-color: #f4511e;
+}
+body {
+    line-height: 1.8;
+}
+img {
+    border-radius: 50px;
+}
+h2, h1 {
+    font-family: Grasss !important;
+    font-size: 24px;
+    text-transform: uppercase;
+    color: #303030;
+    font-weight: 600;
+    margin-bottom: 30px;
+}
+h4 {
+    font-family: Grasss !important;
+    font-size: 19px;
+    line-height: 1.375em;
+    color: #303030;
+    font-weight: 400;
+    margin-bottom: 30px;
+}  
+.container-fluid {
+    padding: 60px 90px ;
+}
+.bg-blue {
+    padding-left: 50px;
+}
+#about img {
+    width: 40vw;
+}
+#MS img {
+    width: 30vw;
+    border-radius: 50px;
+}
+.dropdown-menu {
+    background-color: transparent;
+    border: none;
+    padding: 0;
+}
+.dropdown-list {
+    list-style-type: disc;
+    padding-left: 20px; /* Adjust as needed for proper indentation */
+}
+.dropdown-item {
+    color: white;
+}
+.dropdown-item:hover {
+    text-decoration: underline;
+}
+.bento-box {
+    background-color: rgb(255, 255, 255);
+    padding: 20px;
+    margin: 10px;
+    border-radius: 8px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    transition: transform 0.3s;
+    color: #000;
+    border-style:solid;
+}
+.bento-box:hover {
+    transform: translateY(-10px);
+}
+.coach-card {
+    display: flex;
+    align-items: center;
+    margin-bottom: 15px;
+}
+.coach-card img {
+    width: 100px;
+    height: 100px;
+    border-radius: 50%;
+    margin-right: 15px;
+}
+.coach-info {
+    flex: 1;
+}
+.social-icons a {
+    color: #303030;
+    margin-right: 10px;
+    transition: color 0.3s;
+}
+.social-icons a:hover {
+    color: #f4511e;
+}
+.ml-6 {
+    margin-left: 10rem !important;
+}
+.ml-7 {
+    margin-left: 16rem !important;
+}
+.social-media-heading {
+    margin: 0;
+    /* Add any other styles you need */
+}
+.custom-bk {
+    background-color: #0026fa;
+    padding: 20px;
+    color: white;
+}
+.Sponsor {
+    display: inline-block;
+    outline: none;
+    cursor: pointer;
+    font-size: 1.2rem;
+    line-height: 20px;
+    font-weight: 600;
+    border-radius: 8px;
+    padding: 30px;
+    border: none;
+    transition: box-shadow 0.2s ease 0s, -ms-transform 0.1s ease 0s, -webkit-transform 0.1s ease 0s, transform 0.1s ease 0s;
+    background: red;
+    color: #000000;
+}
+.Sponsor:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 5px 15px  rgb(0, 0, 0);
+    background-color:#ffffff;
+    border-color:  rgb(177, 223, 161);
+    color: rgb(255, 0, 0);
+}
+.main{
+  font-size: 10rem;
+}
+.main img{
+  width: 50vw;
+}
+.title2{
+  font-size: 6rem;
+}
+
+.center {
+    text-align: left;
+    list-style-position: inside;
+}
+/* Media query for smaller screens */
+.main{
+    font-size: 5rem;
+
+}   @media (max-width: 767px) {
+    .container {
+        padding: 0; /* Set the margins to 0 */
+      
+    }
+   
+}
+.team-member {
+        text-align: center;
+        margin-bottom: 30px;
+    }
+    .team-member img {
+        width: 100%;
+        height: auto;
+        border-radius: 20%;
+    }
+    .team-member h3 {
+        margin-top: 15px;
+        margin-bottom: 5px;
+    }
+    .team-member p {
+        margin-bottom: 10px;
+    }
+    .social-icons a {
+        color: #000;
+        margin: 0 5px;
+        transition: color 0.3s;
+    }
+    .social-icons a:hover {
+        color: #007bff;
+    }
+    .main{
+    font-size: 5rem;
+
+}
+.section-title {
+        text-align: center;
+        margin-bottom: 100px;
+        margin-top: 70px;
+}
+.section-title {
+        text-align: center;
+        margin-bottom: 30px;
+        margin-top: 50px;
+    }
+    .sports-row {
+        justify-content: center;
+        text-align: center;
+    }
+    .sports-row ul {
+        list-style-type: none;
+        padding-left: 0;
+    }
+    .container {
+        text-align: center;
+    }
+    @media (max-width: 767px) {
+    .container {
+        padding: 0; /* Set the margins to 0 */
+      
+    }
+   
+}
+/* Media query for smaller screens */
+@media (max-width: 767px) {
+    .container-fluid {
+        padding: 0; /* Set the margins to 0 */
+        text-align: center;
+    }
+    body{
+      margin: 0%;
+    }
+    .ml-6 {
+        margin-left: 0rem !important;
+    }
+    .ml-7 {
+      margin-left: 0rem !important;
+   }
+    .main{
+      font-size: 5rem;
+      margin-bottom: 90px !important;
+
+    }
+    .main img {
+        width: 600px;  
+    }
+    .title2{
+      font-size: 3.4rem;
+    }
+    #about {
+        margin-bottom: 7rem;
+    }
+    #MS img {
+        width: 90vw; /* Make the images bigger */
+        margin-bottom: 7rem;
+    }
+    .social-media-heading {
+        margin-top: 7rem;
+    }
+    .navbar-brand {
+      font-size: 2rem !important;
   }
-  
-  
+    .navbar img {
+      width: 3rem;
+  }
+}
