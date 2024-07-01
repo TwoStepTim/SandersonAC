@@ -15,16 +15,11 @@
     text-align: center;
     margin-top: 1em;
   }
-  .logos  p {
-    font-size: 3em;
-    font-size: 800;
-    font-family: "Roboto", sans-serif;
-    margin: 1em 0.3em;
-    color: white;
-  }
+ 
   .logos{
+    margin-top: 50px;
     overflow: hidden;
-    padding: 60px 0;
+    padding: 10px 0;
     white-space: nowrap;
     position: relative;
   }
@@ -52,9 +47,16 @@
   }
   .logos-slide{
     display: inline-block;
-    animation: 35s slide infinite linear;
+    animation: 60s slide infinite linear;
   }
   .logos-slide img{
-    height: 26vh;
+    height: 20vh;
     margin: 0 40px;
+    
+  }
+
+  .partners p{
+    text-align: center;
+    font-family: Grasss !important;
+    font-size: 1.3rem;
   }
