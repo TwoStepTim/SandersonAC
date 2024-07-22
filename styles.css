@@ -5,7 +5,7 @@
     flex-direction: column;
     align-items: center;
     padding: 10px 20px;
-    background-color: #f41e1e;
+    background-color: #ffffff;
     color: #303030;
 }
 @media (min-width: 768px) {
@@ -14,8 +14,29 @@
         justify-content: space-between;
     }
 }
+@media (max-width: 768px) {
+    .main {
+        font-size: 8px; /* Adjust font size for smaller screens */
+        height: auto;   /* Allow height to adjust */
+        padding: 20px;  /* Add some padding */
+    }
+
+    .title2 {
+        font-size: 1.5em; /* Adjust heading size for smaller screens */
+    }
+}
+
+@media (max-width: 480px) {
+    .main {
+        font-size: 6px; /* Further adjust font size for very small screens */
+    }
+
+    .title2 {
+        font-size: 1.2em; /* Further adjust heading size for very small screens */
+    }
+}
 .navbar {
-    background: white;
+    background: #ff0000;
     font-family: Grasss !important;
 }
 .navbar-toggler {
@@ -27,10 +48,10 @@
 "data:image/svg+xml;charset=utf8,%3Csvg viewBox='0 0 32 32' xmlns='http://www.w3.org/2000/svg'%3E%3Cpath stroke='rgba(17, 0, 255, 0.8)' stroke-width='2' stroke-linecap='round' stroke-miterlimit='10' d='M4 8h24M4 16h24M4 24h24'/%3E%3C/svg%3E");
 }
 .collapse.navbar-collapse {
-  background-color: white; /* Optional: Change background color of dropdown to white */
+  background-color: #ff0000; /* Optional: Change background color of dropdown to white */
 }
 .navbar-nav .nav-link {
-  color: #ff0000; /* Change dropdown menu item color to red */
+  color: #ffffff; /* Change dropdown menu item color to red */
 }
 .navbar a {
     color: #000;
@@ -39,11 +60,14 @@
     width: 7rem;
 }
 .navbar a:hover {
-    color: #ff0000;
+    color: #ffffff;
+}
+.nav-item :hover {
+    color: #0026fa !important;
 }
 .navbar-brand {
     font-size: 2.7rem !important;
-    color: #ff0000;
+    color: #ffffff;
 }
 .nav-item {
     font-size:2rem;
@@ -52,11 +76,24 @@
     position: relative;
     background: url('img/home.png') no-repeat center center;
     background-size: cover;
-    height: 400px;
+    height: 100px;
     display: flex;
     justify-content: center;
     align-items: center;
     color: white;
+    text-align: center;
+}
+.main {
+    color: white;
+    font-size: 10px;
+    display: flex;
+    align-items: center;    /* Vertically center */
+    justify-content: center; /* Horizontally center */
+    background-image: url('img/home.png');
+    background-repeat: no-repeat;
+    height: 500px;
+    background-size: cover;
+    background-position: center;
     text-align: center;
 }
 .hero-content {
@@ -187,11 +224,24 @@ h4 {
     border-color:  rgb(177, 223, 161);
     color: rgb(255, 0, 0);
 }
-.main{
-  font-size: 10rem;
+
+.about p{
+    text-align: left;
 }
-.main img{
-  width: 50vw;
+.Sports h1{
+    color: #ff0000;
+}
+.blank-red{
+    background-color: #ff0000;
+    color: #ffffff;
+}
+.blank-blue{
+    color: #ffffff;
+    background-color: #0026fa;
+}
+.blank-white{
+    color: #ff0000;
+    background-color: #f4f3ee;
 }
 .title2{
   font-size: 6rem;
@@ -202,10 +252,7 @@ h4 {
     list-style-position: inside;
 }
 /* Media query for smaller screens */
-.main{
-    font-size: 5rem;
-
-}   @media (max-width: 767px) {
+ @media (max-width: 767px) {
     .container {
         padding: 0; /* Set the margins to 0 */
       
@@ -213,6 +260,7 @@ h4 {
    
 }
 .team-member {
+    margin-top: 30px;
         text-align: center;
         margin-bottom: 30px;
     }
@@ -236,10 +284,7 @@ h4 {
     .social-icons a:hover {
         color: #007bff;
     }
-    .main{
-    font-size: 5rem;
-
-}
+   
 .section-title {
         text-align: center;
         margin-bottom: 100px;

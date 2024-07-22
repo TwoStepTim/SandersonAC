@@ -21,72 +21,76 @@
 <body>
     <div class="preloader">
         <img src="img/SAC.png" alt="Your Logo">
-      </div>
+    </div>
     
     <!-- Header -->
     <div class="header">
-        <div>sandersonathliculb@gmail.com</div>
+        <div>Sandersonathleticclub@gmail.com</div>
         <div>5500 Dixon Dr, Raleigh, NC 27609</div>
     </div>
 
     <!-- Navbar -->
     <nav class="navbar navbar-expand-lg ">
       
-      <a class="navbar-brand" href="index.html"><img src="img/Sanderson_Spartans.png" alt="">Sanderson Athletic Club</a>
-      <button class="navbar-toggler custom-toggler " type="button" data-toggle="collapse" data-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
-          <span class="navbar-toggler-icon"></span>
-      </button>
-      <div class="collapse navbar-collapse" id="navbarNav">
-          <ul class="navbar-nav ml-auto">
-              <li class="nav-item">
-                  <a class="nav-link" href="index.html">Home</a>
-              </li>
-              <li class="nav-item">
-                  <a class="nav-link" href="AboutUs.html">About</a>
-              </li>
-              <li class="nav-item">
-                  <a class="nav-link" href="B.O.D.html">Members</a>
-              </li>
-              <li class="nav-item">
-                <a class="nav-link" href="Team.html">Sports</a>
+        <a class="navbar-brand" href="index.html"><img src="img/Sanderson_Spartans.png" alt="">Sanderson Athletic Club</a>
+        <button class="navbar-toggler custom-toggler " type="button" data-toggle="collapse" data-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse" id="navbarNav">
+            <ul class="navbar-nav ml-auto">
+                <li class="nav-item">
+                    <a class="nav-link" href="index.html">Home</a>
                 </li>
-              <li class="nav-item">
-                  <a class="nav-link" href="#">Events</a>
+                <li class="nav-item">
+                    <a class="nav-link" href="AboutUs.html">About</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="B.O.D.html">Board</a>
+                </li>
+                <li class="nav-item">
+                  <a class="nav-link" href="Sponsor.html">Sponsor</a>
+                </li>
+                <li class="nav-item">
+                  <a class="nav-link" href="Sports.html">Sports</a>
+                  </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="#">Events</a>
+                </li>
+                <li class="nav-item">
+                  <a class="nav-link" href="https://sandersonathleticzone.com/" target="_blank">Team</a>
               </li>
               <li class="nav-item">
-                <a class="nav-link" href="https://sandersonathleticzone.com/" target="_blank">Team</a>
+                <a class="nav-link" href="https://sanderson-athletic-club.square.site/" target="_blank">Merch</a>
             </li>
-          </ul>
-      </div>
-  </nav>
+            </ul>
+        </div>
+    </nav>
 
     <!-- Main Content -->
-    <div class="container-fluid mt-5 main">
-        <div class="row">
-            <!-- Text Section -->
-            <div class="col-md-7">
-                <img class="featurette-image img-fluid mx-auto" data-src="holder.js/500x500/auto" alt="500x500" src="img/home.png" data-holder-rendered="true">
-            </div>
-            <div class="col-md-5 ">
-                <h1 class="main">Sanderson Athletic Club</h1>
+    <div class="main">
+        <div class="container">
+            <div class="row">
+                <!-- Text Section -->
+                <div class="col-md-12  ">
+                    <h1 class="title2" >Sanderson Athletic Club</h1>
+                </div>
             </div>
         </div>
     </div>
     <section>
-        <div class="container-fluid mt-5">
+        <div class="container mt-5">
             <div class="row">
                 <!-- Text Section -->
-                <div class="col-md-4 ml-7">
+                <div class="col-md-8 ">
                     <h1 class="title2" >Your Hub for All Things Athletics</h1>
                     <p>Welcome to the Sanderson High School Athletic Club, where all your athletic needs come together under one roof. Our comprehensive sports programs are designed to support and inspire student-athletes, fostering a community of excellence, teamwork, and sportsmanship. Explore our wide range of activities and join us in celebrating the spirit of competition and personal growth.</p>
                 </div>
-                <div class="col-md-4 ml-5">
+                <div class="col-md-4">
                     <img src="img/SAC.png" alt="">
                 </div>
             </div>
         </div>
     </section>
-    <hr>
     <section class="custom-bk">
         <div class="container mt-5">
             <div class="row">
@@ -98,8 +102,8 @@
                     <button type="button" class="Sponsor">Sponsor Now</button>
                 </div>
             </div>
-        </section>
-        <div class="partners">
+    </section>
+    <div class="partners">
             <div class="partner-title">
                 <h1 class="section-heading animated wow slideInUp" style="font-size: 4rem;">Sponsors</h1>
             </div>
@@ -221,10 +225,14 @@
         </footer>
         <script>
 
-            // Remove preloader after 5 seconds
-            setTimeout(function() {
-              document.body.classList.add('loaded');
-            }, 3000);
+           // Remove preloader after 5 seconds
+        setTimeout(function() {
+          document.body.classList.add('loaded');
+        }, 3000);
+    // Check if the page has fully loaded
+        window.addEventListener('load', function() {
+          document.body.classList.add('loaded');
+        });
        
            
           </script>

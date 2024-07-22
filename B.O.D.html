@@ -7,7 +7,7 @@
     <meta name="keywords" content="Sanderson, Athletic Club, Sports, Student-Athletes, Raleigh">
     <meta name="author" content="Circuit Tech Solutions LLC">
     <link rel="icon" type="image/x-icon" href="img/SAC.jpg">
-    <title>Sanderson Athletic Club | Home </title>
+    <title>Sanderson Athletic Club |Board </title>
     <link href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css" rel="stylesheet">
     <link href="https://fonts.googleapis.com/css?family=Lato" rel="stylesheet" type="text/css">
     <link href="https://fonts.googleapis.com/css?family=Montserrat" rel="stylesheet" type="text/css">
@@ -20,7 +20,9 @@
     <link href="https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap" rel="stylesheet">
 </head>
 <body>
-
+    <div class="preloader">
+        <img src="img/SAC.png" alt="Your Logo">
+      </div>
     <!-- Header -->
     <div class="header">
         <div>sandersonathliculb@gmail.com</div>
@@ -30,40 +32,52 @@
     <!-- Navbar -->
     <nav class="navbar navbar-expand-lg ">
       
-      <a class="navbar-brand" href="index.html"><img src="img/Sanderson_Spartans.png" alt="">Sanderson Athletic Club</a>
-      <button class="navbar-toggler custom-toggler " type="button" data-toggle="collapse" data-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
-          <span class="navbar-toggler-icon"></span>
-      </button>
-      <div class="collapse navbar-collapse" id="navbarNav">
-          <ul class="navbar-nav ml-auto">
-              <li class="nav-item">
-                  <a class="nav-link" href="index.html">Home</a>
-              </li>
-              <li class="nav-item">
-                  <a class="nav-link" href="AboutUs.html">About</a>
-              </li>
-              <li class="nav-item">
-                  <a class="nav-link" href="B.O.D.html">Members</a>
-              </li>
-              <li class="nav-item">
-                <a class="nav-link" href="Team.html">Sports</a>
+        <a class="navbar-brand" href="index.html"><img src="img/Sanderson_Spartans.png" alt="">Sanderson Athletic Club</a>
+        <button class="navbar-toggler custom-toggler " type="button" data-toggle="collapse" data-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse" id="navbarNav">
+            <ul class="navbar-nav ml-auto">
+                <li class="nav-item">
+                    <a class="nav-link" href="index.html">Home</a>
                 </li>
-              <li class="nav-item">
-                  <a class="nav-link" href="#">Events</a>
+                <li class="nav-item">
+                    <a class="nav-link" href="AboutUs.html">About</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="B.O.D.html">Board</a>
+                </li>
+                <li class="nav-item">
+                  <a class="nav-link" href="Sponsor.html">Sponsor</a>
+                </li>
+                <li class="nav-item">
+                  <a class="nav-link" href="Sports.html">Sports</a>
+                  </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="#">Events</a>
+                </li>
+                <li class="nav-item">
+                  <a class="nav-link" href="https://sandersonathleticzone.com/" target="_blank">Team</a>
               </li>
               <li class="nav-item">
-                <a class="nav-link" href="https://sandersonathleticzone.com/" target="_blank">Team</a>
+                <a class="nav-link" href="https://sanderson-athletic-club.square.site/" target="_blank">Merch</a>
             </li>
-          </ul>
-      </div>
-  </nav>
-    
+            </ul>
+        </div>
+    </nav>
+
+  <div class="main">
     <div class="container">
         <div class="row">
-            <div class="col-12">
-                <h1 class="section-title main">Board Of Directors</h1>
+            <!-- Text Section -->
+            <div class="col-md-12  ">
+                <h1 class="title2" > Board</h1>
             </div>
         </div>
+    </div>
+</div>
+    <div class="container">
+        
         <div class="row">
             <!-- First Row -->
             <div class="col-lg-4 col-md-6 team-member">
@@ -238,7 +252,16 @@
         <!-- Copyright -->
     </footer>
     <!-- Footer -->
-
+    <script>
+        // Remove preloader after 5 seconds
+        setTimeout(function() {
+            document.body.classList.add('loaded');
+        }, 3000);
+        // Check if the page has fully loaded
+            window.addEventListener('load', function() {
+        document.body.classList.add('loaded');
+        });
+    </script>
     <!-- End of .container -->
     <link href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" rel="stylesheet">
         <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js"></script>
